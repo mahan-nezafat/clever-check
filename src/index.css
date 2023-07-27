@@ -122,10 +122,11 @@ input {
   gap: 1.2rem;
 }
 
+
 input[type="checkbox"] {
   height: 2rem;
   width: 2rem;
-  accent-color: #e5771f;
+  accent-color: #0F4C75;
 }
 
 .list li button {
@@ -144,4 +145,8 @@ input[type="checkbox"] {
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
+}
+
+.line-through {
+  text-decoration: line-through;
 }
