@@ -21,13 +21,17 @@ const App = () => {
     setItems(items => items.map(item => item.id === id ? {...item, packed: !item.packed} : item));
   }
 
+  function handleClear() {
+    setItems([]);
+  }
+
   return ( 
     <>
       <div className='app'>
         <Header />
         <Form onAddItem={handleAddItem} />
-        <ListItems items={items} onDeleteItem={handleDelete} onCheckItem={handleCheck} />
-        <Stat />
+        <ListItems items={items} onDeleteItem={handleDelete} onCheckItem={handleCheck} onClearItem={handleClear}/>
+        <Stat items={items} />
       </div>
     </>
    );
